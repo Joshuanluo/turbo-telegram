@@ -5,9 +5,6 @@ $(document).ready(function () {
         const roleId = $(this).attr('id');
         const childClass = $(this).children().attr('class');
         console.log(childClass === 'hidden');
-        const roleContent = $(this).html();
-        // console.log(roleId);
-        // console.log('role:', roleContent);
         //choose player1
         if (!game.isPlayer1Locked && childClass !== "hidden") {
             game.player1.name = roleId;
@@ -43,7 +40,7 @@ $(document).ready(function () {
             }
 
         }
-        // console.log(game);
+
 
 
     });

@@ -33,9 +33,8 @@ const game = {
         if (remainder === 0) {
             currentPlayer = this.player2;
         }
-        // console.log(currentPlayer);
         return currentPlayer;
-    },
+    }, //end of checkWhoseTurn
 
 
     turnTaken: function (squareId, squareContent) {
@@ -47,13 +46,13 @@ const game = {
             console.log('turn', this.turnNumber)
             return true;
         }
-    },
+    }, //end of turnTaken
 
 
     checkWin: function () {
         const winConditions = this.winConditions;
         const chioce = this.checkWhoseTurn().chioce;
-        // console.log(chioce);
+
         let result = false;
         for (let i = 0; i < winConditions.length; i++) {
             result = winConditions[i].every(e => chioce.includes(e));
@@ -64,7 +63,7 @@ const game = {
         }
         return result;
 
-    },
+    }, //end of checkWin
 
 
 }; // end of game object;

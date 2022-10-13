@@ -40,6 +40,7 @@ main {
     justify-content: center;
     flex-direction: column;
     width: 250px;
+    padding: 20px;
     /* border: black 1px solid; */
 }
 
@@ -47,7 +48,7 @@ main {
     display: inline-block;
     width: 200px;
 
-    margin: 40px auto;
+    margin: 10px auto;
 }
 
 .role {
@@ -55,7 +56,7 @@ main {
     display: inline-block;
     width: 70px;
     height: 70px;
-    margin: 0 auto;
+    margin: 3px;
     transition: 0.3s all;
 
 }
@@ -64,11 +65,7 @@ img {
     position: static;
     width: 70px;
     height: 70px;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    vertical-align: middle;
 }
 
 .hidden {
@@ -87,7 +84,7 @@ img {
 .middle {
     display: inline-block;
     width: 60%;
-    padding: 10px;
+    padding: 20px;
     /* border: black 1px solid; */
 }
 
@@ -102,18 +99,30 @@ img {
     vertical-align: top;
 }
 
+.square img {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
 /* middle area end */
 
 /* right area begin */
 .right {
     display: inline-block;
+    padding: 20px;
     /* border: black 1px solid; */
 }
 
 .players {
     display: inline-block;
-    width: 250px;
-
+    width: 200px;
+    vertical-align: middle;
     margin: 40px auto;
 }
 
@@ -129,8 +138,8 @@ img {
 }
 
 .player img {
-    width: 85px;
-    height: 85px;
+    width: 84px;
+    height: 84px;
 }
 
 /* right area end */
