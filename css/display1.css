@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Silkscreen&display=swap');
+
+* {
+    box-sizing: border-box;
+    /* width and height are respected, regardless of padding and border.*/
+
+}
+
+body {
+    color: white;
+    background-color: #0B2B40;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.container {
+
+    margin: auto;
+
+}
+
+header {
+    margin: 40px 0px 20px 0px;
+    font-family: 'Silkscreen', cursive;
+}
+
+main {
+    background-color: #164773;
+    width: 1000px;
+    display: flex;
+    margin: 0px auto;
+    border-radius: 1em;
+}
+
+/* left area begin */
+
+.left {
+    /* color: #89D99D; */
+    /* display: flex; */
+    justify-content: center;
+    flex-direction: column;
+    width: 250px;
+    /* border: black 1px solid; */
+}
+
+.roles {
+    display: inline-block;
+    width: 200px;
+
+    margin: 40px auto;
+}
+
+.role {
+
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    transition: 0.3s all;
+
+}
+
+img {
+    position: static;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.role:hover {
+    transform: scale(1.2);
+}
+
+/* left area end */
+
+
+
+/* middle area begin*/
+.middle {
+    display: inline-block;
+    width: 60%;
+    padding: 10px;
+    /* border: black 1px solid; */
+}
+
+.square {
+    width: 150px;
+    margin: 1px;
+    height: 150px;
+    background-color: #e7e3d8;
+    border-radius: 1em;
+    display: inline-block;
+    line-height: 150px;
+    vertical-align: top;
+}
+
+/* middle area end */
+
+/* right area begin */
+.right {
+    display: inline-block;
+    /* border: black 1px solid; */
+}
+
+.players {
+    display: inline-block;
+    width: 250px;
+
+    margin: 40px auto;
+}
+
+.player {
+
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    transition: 0.3s all;
+    border: #89D99D 8px solid;
+    border-radius: 100%;
+}
+
+.player img {
+    width: 85px;
+    height: 85px;
+}
+
+/* right area end */
+
+
+
+footer {
+    margin: 10px auto;
+    width: 1000px;
+}
+
+.setting {
+    width: 490px;
+    display: inline-block;
+    position: relative;
+    border: 0px;
+    color: white;
+    background: green;
+    height: 50px;
+    line-height: 50px;
+    margin: 10px auto;
+    border-radius: 1em;
+}
+
+.setting:hover {
+    font-size: 30px;
+}

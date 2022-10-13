@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.1</title>
+    <link rel="stylesheet" href="css/display1.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/DOM.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Tic Tac Toe</h1>
+        </header>
+        <main>
+            <div class="left">
+                <p>choose your role</p>
+                <div class="roles">
+                    <div class="role mouse" id="mouse"><img src="img/roles/mouse.png" alt=""></div>
+                    <div class="role cow" id="cow"><img src="img/roles/cow.png" alt=""></div>
+                    <div class="role tiger" id="tiger"><img src="img/roles/tiger.png" alt=""></div>
+                    <div class="role rabbit" id="rabbit"><img src="img/roles/rabbit.png" alt=""></div>
+                    <div class="role dragon" id="dragon"><img src="img/roles/dragon.png" alt=""></div>
+                    <div class="role snake" id="snake"><img src="img/roles/snake.png" alt=""></div>
+                    <div class="role horse" id="horse"><img src="img/roles/horse.png" alt=""></div>
+                    <div class="role goat" id="goat"><img src="img/roles/goat.png" alt=""></div>
+                    <div class="role monkey" id="monkey"><img src="img/roles/monkey.png" alt=""></div>
+                    <div class="role chicken" id="chicken"><img src="img/roles/chicken.png" alt=""></div>
+                    <div class="role dog" id="dog"><img src="img/roles/dog.png" alt=""></div>
+                    <div class="role pig" id="pig"><img src="img/roles/pig.png" alt=""></div>
+                </div>
+
+            </div>
+            <div class="middle">
+                <div class="tips">
+                    <p>this is tips</p>
+                </div>
+                <div class="squares">
+                    <div class="square" id="s0"></div>
+                    <div class="square" id="s1"></div>
+                    <div class="square" id="s2"></div>
+                    <div class="square" id="s3"></div>
+                    <div class="square" id="s4"></div>
+                    <div class="square" id="s5"></div>
+                    <div class="square" id="s6"></div>
+                    <div class="square" id="s7"></div>
+                    <div class="square" id="s8"></div>
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="players">
+                    <p>player1:</p>
+                    <div class="player" id="player1"></div>
+                    <p>score:0</p>
+                    <p>player2:</p>
+                    <div class="player" id="player2"></div>
+                    <p>score:0</p>
+
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="setting" id="restart">restart</div>
+            <div class="setting" id="nextRound">next round</div>
+        </footer>
+    </div>
+</body>
+
+</html>
