@@ -29,7 +29,7 @@ $(document).ready(function () {
             squareRender(squareContent, squareId);
             const turnTaken = game.turnTaken(squareId, squareContent);
             roundRender();
-            if (game.isGameFinish) {
+            if (game.isGameFinish && game.turnNumber !== 8) {
                 game.checkWhoseTurn().score++;
 
                 renderScore();
