@@ -12,7 +12,7 @@ const roundRender = function () {
     if (game.checkWin()) {
         $('div.tips').html(`<p>Winner is ${currentPlayer.name}.</p>`).addClass('animate__animated animate__shakeY');
 
-    } else if (game.turnNumber === 9) {
+    } else if (game.checkDraw()) {
         $('div.tips').html(`<p>Draw</p>`).addClass('animate__animated animate__shakeY');
     };
 };

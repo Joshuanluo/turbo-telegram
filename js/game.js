@@ -13,6 +13,7 @@ const game = {
     },
     turnNumber: 1,
     isGameFinish: false,
+    isGameDraw: false,
     isPlayer1Locked: false,
     isPlayer2Locked: false,
     winConditions: [
@@ -53,17 +54,25 @@ const game = {
         const winConditions = this.winConditions;
         const chioce = this.checkWhoseTurn().chioce;
 
-        let result = false;
+        let isWin = false;
         for (let i = 0; i < winConditions.length; i++) {
-            result = winConditions[i].every(e => chioce.includes(e));
-            if (result) {
+            isWin = winConditions[i].every(e => chioce.includes(e));
+            if (isWin) {
                 this.isGameFinish = true;
                 break;
             }
         }
-        return result;
+        return isWin;
 
     }, //end of checkWin
+
+    checkDraw: function () {
+        let isDraw = false;
+        if (this.turnNumber === 9 && this.isGameFinish === false) {
+            isDraw = true;
+        }
+        return isDraw;
+    }, //end of checkDraw
 
 
 }; // end of game object;
